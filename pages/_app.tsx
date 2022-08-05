@@ -1,8 +1,9 @@
+import { AppProps } from 'next/app';
 import { Auth } from '@supabase/ui';
-import { supabase } from '../lib/initSupabase';
+import supabase from '../lib/initSupabase';
 import '../style.css';
 
-export default function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className="dark">
       <Auth.UserContextProvider supabaseClient={supabase}>
@@ -11,3 +12,5 @@ export default function MyApp({ Component, pageProps }) {
     </main>
   );
 }
+
+export default MyApp;

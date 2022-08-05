@@ -7,6 +7,7 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:react/jsx-runtime",
+    "next",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
